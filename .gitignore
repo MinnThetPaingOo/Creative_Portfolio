@@ -1,0 +1,53 @@
+# Node
+node_modules/
+
+# Next.js
+.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+# Build
+build/
+dist/
+
+# Coverage
+coverage/
+
+# Others
+*.log
+*.tmp
+*.bak
+
+# Ignore local files
+*.local
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# Ignore test snapshots
+__snapshots__/
+
+# Ignore output
+out/
