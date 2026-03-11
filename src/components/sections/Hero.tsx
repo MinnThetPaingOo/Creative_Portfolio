@@ -230,9 +230,11 @@ export default function Hero() {
           {/* Profile image overlay */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-neon-purple to-neon-cyan p-[2px]">
             <div className="w-full h-full rounded-full bg-dark-900 flex items-center justify-center overflow-hidden">
-              <span className="text-3xl md:text-4xl font-bold neon-text">
-                TPO
-              </span>
+              <img
+                src="/profile.jpg"
+                alt="Profile picture"
+                className="w-full h-full object-cover object-top rounded-full"
+              />
             </div>
           </div>
         </motion.div>
