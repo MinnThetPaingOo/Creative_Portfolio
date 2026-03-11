@@ -7,6 +7,7 @@ import { techStack, TechItem } from "@/data/portfolio";
 
 const categories = [
   "All",
+  "UI",
   "Frontend",
   "Backend",
   "Database",
@@ -16,6 +17,7 @@ const categories = [
 ] as const;
 
 const categoryConfig: Record<string, { icon: string; gradient: string }> = {
+  UI: { icon: "🎨", gradient: "from-pink-500 to-rose-500" },
   Frontend: { icon: "⚛️", gradient: "from-neon-purple to-neon-blue" },
   Backend: { icon: "⚙️", gradient: "from-green-500 to-emerald-500" },
   Database: { icon: "🗄️", gradient: "from-neon-blue to-neon-cyan" },
@@ -123,7 +125,7 @@ export default function TechStackSection() {
       : techStack.filter((t) => t.category === activeCategory);
 
   return (
-    <SectionWrapper id="techstack">
+    <SectionWrapper id="techstack" className="!pt-10 md:!pt-14">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

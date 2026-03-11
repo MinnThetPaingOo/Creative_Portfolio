@@ -7,10 +7,12 @@ import { projects, Project } from "@/data/portfolio";
 
 const stackFilters = [
   "All",
-  "MERN",
+  "Figma Make",
   "AI",
+  "MERN",
   "Next.js",
   "Spring Boot",
+  "Django",
   "React Native",
 ];
 const statusFilters = ["All", "Complete", "Ongoing"];
@@ -179,7 +181,7 @@ export default function Projects() {
             viewport={{ once: true }}
             className="text-neon-purple font-mono text-sm mb-3"
           >
-            {"// 02. Projects"}
+            {"// 04. Projects"}
           </motion.p>
           <h2 className="section-heading">
             <span className="neon-text">Featured</span>{" "}

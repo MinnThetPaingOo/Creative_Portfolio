@@ -2,16 +2,6 @@
 
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
-import { skills } from "@/data/portfolio";
-
-const skillCategories = [
-  { name: "UI", icon: "🎨", gradient: "from-pink-500 to-rose-500" },
-  { name: "Frontend", icon: "⚛️", gradient: "from-neon-purple to-neon-blue" },
-  { name: "Backend", icon: "⚙️", gradient: "from-green-500 to-emerald-500" },
-  { name: "Database", icon: "🗄️", gradient: "from-neon-blue to-neon-cyan" },
-  { name: "AI & APIs", icon: "🤖", gradient: "from-neon-purple to-neon-pink" },
-  { name: "Mobile", icon: "📱", gradient: "from-neon-cyan to-green-400" },
-];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -32,7 +22,7 @@ const itemVariants = {
 
 export default function About() {
   return (
-    <SectionWrapper id="about">
+    <SectionWrapper id="about" className="!pb-10 md:!pb-14">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -42,7 +32,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-neon-purple font-mono text-sm mb-3"
           >
-            {"// 01. About Me"}
+            {"// 02. About Me"}
           </motion.p>
           <h2 className="section-heading">
             <span className="neon-text">Get to Know</span>{" "}
@@ -166,61 +156,6 @@ export default function About() {
             </div>
           </div>
         </motion.div>
-
-        {/* Skills */}
-        <div className="space-y-8">
-          <motion.h3
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-2xl font-bold text-white text-center mb-8"
-          >
-            Technologies I Work With
-          </motion.h3>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-          >
-            {skillCategories.map((category) => {
-              const categorySkills = skills.filter(
-                (s) => s.category === category.name,
-              );
-              if (categorySkills.length === 0) return null;
-
-              return (
-                <motion.div
-                  key={category.name}
-                  variants={itemVariants}
-                  className="glass-card rounded-xl p-6 group"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-xl">{category.icon}</span>
-                    <h4
-                      className={`font-semibold text-transparent bg-clip-text bg-gradient-to-r ${category.gradient}`}
-                    >
-                      {category.name}
-                    </h4>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {categorySkills.map((skill) => (
-                      <motion.span
-                        key={skill.name}
-                        whileHover={{ scale: 1.05, y: -2 }}
-                        className="px-3 py-1.5 rounded-lg text-sm font-medium bg-dark-700/60 text-gray-300 border border-white/5 hover:border-neon-purple/30 transition-colors cursor-default"
-                      >
-                        {skill.name}
-                      </motion.span>
-                    ))}
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </div>
       </div>
     </SectionWrapper>
   );

@@ -24,8 +24,8 @@ export default function Home() {
       <main className="relative z-10">
         <Hero />
         <About />
-        <Projects />
         <TechStackSection />
+        <Projects />
         <Contact />
       </main>
       <Footer />

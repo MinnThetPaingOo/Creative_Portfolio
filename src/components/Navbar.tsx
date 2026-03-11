@@ -61,7 +61,7 @@ export default function Navbar() {
             }}
             className="relative group"
           >
-            <span className="text-xl font-bold font-mono neon-text">
+            <span className="text-lg font-bold font-mono neon-text">
               &lt;TPO /&gt;
             </span>
             <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-neon-purple to-neon-cyan group-hover:w-full transition-all duration-300" />

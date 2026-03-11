@@ -96,17 +96,17 @@ export default function Hero() {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="flex justify-center lg:justify-start"
+            className="flex justify-center lg:justify-start pt-1 md:pt-1"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium glass border border-neon-purple/20 text-neon-purple">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <span className="inline-flex items-center gap-1.5 px-3 py-0 rounded-full text-xs font-medium glass border border-neon-purple/20 text-neon-purple">
+              <span className="w-1 h-1 rounded-full bg-green-400 animate-pulse" />
               Available for freelance work
             </span>
           </motion.div>
 
           {/* Name */}
           <motion.div variants={itemVariants}>
-            <p className="text-gray-400 text-lg mb-2 font-mono">
+            <p className="text-gray-400 text-lg mt-4 mb-1 font-mono">
               &gt; Hello, I&apos;m
             </p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -231,7 +231,7 @@ export default function Hero() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-neon-purple to-neon-cyan p-[2px]">
             <div className="w-full h-full rounded-full bg-dark-900 flex items-center justify-center overflow-hidden">
               <span className="text-3xl md:text-4xl font-bold neon-text">
-                TP
+                TPO
               </span>
             </div>
           </div>

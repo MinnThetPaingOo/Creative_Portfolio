@@ -61,18 +61,34 @@ export default function Contact() {
   });
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
+    setError("");
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setSending(false);
-    setSent(true);
-    setFormState({ name: "", email: "", subject: "", message: "" });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
 
-    setTimeout(() => setSent(false), 4000);
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error || "Something went wrong. Please try again.");
+      } else {
+        setSent(true);
+        setFormState({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setSent(false), 4000);
+      }
+    } catch {
+      setError("Failed to send. Check your connection and try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleChange = (
@@ -92,7 +108,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="text-neon-purple font-mono text-sm mb-3"
           >
-            {"// 04. Contact"}
+            {"// 05. Contact"}
           </motion.p>
           <h2 className="section-heading">
             <span className="neon-text">Get In</span>{" "}
@@ -374,6 +390,15 @@ export default function Contact() {
                     className="text-green-400 text-sm font-mono"
                   >
                     ✓ delivered
+                  </motion.span>
+                )}
+                {error && (
+                  <motion.span
+                    initial={{ opacity: 0, x: 10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    className="text-red-400 text-sm font-mono"
+                  >
+                    ✗ {error}
                   </motion.span>
                 )}
               </div>

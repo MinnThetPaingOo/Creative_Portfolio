@@ -12,13 +12,17 @@ import {
 } from "react-icons/fa";
 import {
   SiNextdotjs,
+  SiVuedotjs,
   SiTailwindcss,
   SiTypescript,
   SiJavascript,
   SiMongodb,
   SiExpress,
   SiSpringboot,
+  SiPython,
+  SiDjango,
   SiSupabase,
+  SiFirebase,
   SiOpenai,
   SiGoogle,
 } from "react-icons/si";
@@ -42,100 +46,125 @@ export const projects: Project[] = [
     title: "AI Chat Application",
     description:
       "Real-time AI chat application powered by Gemini API with streaming responses, conversation history, and multi-model support. Features a sleek dark UI and responsive design.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Gemini API",
-    ],
-    stack: ["MERN", "AI"],
+    technologies: ["Tailwind CSS", "React.js", "Gemini API"],
+    stack: ["AI"],
     status: "Complete",
-    liveUrl: "#",
+    liveUrl: "https://winterai.vercel.app",
     githubUrl: "#",
   },
   {
     id: "2",
-    title: "SaaS Dashboard Platform",
+    title: "Real-Time Chat Application",
     description:
-      "Full-stack SaaS platform with multi-tenant architecture, Stripe integration, role-based access control, and real-time analytics dashboard.",
-    technologies: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"],
-    stack: ["Next.js", "MERN"],
+      "Full-stack real-time chat application built with MERN stack. Features include user authentication, private messaging, group chats, and a responsive UI designed with Tailwind CSS.",
+    technologies: [
+      "Tailwind CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    stack: ["MERN"],
     status: "Complete",
-    liveUrl: "#",
+    liveUrl: "https://himessage.vercel.app",
     githubUrl: "#",
   },
   {
     id: "3",
-    title: "AI Code Review Tool",
+    title: "Mini Social Media Platform",
     description:
-      "Automated code review tool that uses OpenAI API to analyze code quality, detect bugs, suggest improvements, and generate documentation.",
-    technologies: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS"],
-    stack: ["Next.js", "AI"],
-    status: "Ongoing",
-    liveUrl: "#",
-    githubUrl: "#",
+      "A lightweight social media platform with core features like user profiles, posts, comments, and a feed.",
+    technologies: [
+      "Tailwind CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    stack: ["MERN"],
+    status: "Complete",
+    // liveUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: "4",
-    title: "E-Commerce API",
+    title: "Dev Event Management System",
     description:
-      "RESTful e-commerce backend built with Spring Boot featuring JWT authentication, payment processing, inventory management, and order tracking.",
-    technologies: ["Spring Boot", "Java", "PostgreSQL", "Docker"],
-    stack: ["Spring Boot"],
-    status: "Complete",
-    liveUrl: "#",
-    githubUrl: "#",
+      "Full-stack event management system built with Python and Django, featuring event creation, registration, scheduling, and user authentication.",
+    technologies: ["Tailwind CSS", "Next.js", "MongoDB"],
+    stack: ["Next.js"],
+    status: "Ongoing",
+    // liveUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: "5",
-    title: "Mobile Fitness Tracker",
+    title: "Video Calling Mobile App",
     description:
-      "Cross-platform mobile app for tracking workouts, nutrition, and health metrics with real-time sync and social features.",
-    technologies: ["React Native", "Node.js", "MongoDB", "Express.js"],
-    stack: ["React Native", "MERN"],
+      "A cross-platform video calling app built with React Native, featuring real-time video communication, user authentication, and a sleek UI designed with Tailwind CSS.",
+    technologies: [
+      "React Native",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    stack: ["React Native"],
     status: "Ongoing",
-    liveUrl: "#",
-    githubUrl: "#",
+    // liveUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: "6",
-    title: "DevOps Monitoring Dashboard",
+    title: "Airline Reservation System",
     description:
-      "Real-time infrastructure monitoring dashboard with alerting, log aggregation, and performance metrics visualization for cloud deployments.",
-    technologies: ["Next.js", "Node.js", "DynamoDB", "AWS", "Tailwind CSS"],
-    stack: ["Next.js", "MERN"],
-    status: "Ongoing",
-    liveUrl: "#",
-    githubUrl: "#",
+      "Full-stack airline reservation system built with Python and Django, featuring flight search, seat selection, booking management, and user authentication.",
+    technologies: ["Python", "Django"],
+    stack: ["Django"],
+    status: "Complete",
+    // liveUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: "7",
-    title: "AI Content Generator",
+    title: "Student Management System",
     description:
-      "AI-powered content generation SaaS tool for blog posts, social media captions, and marketing copy. Supports multiple AI models and tone customization.",
+      "Full-stack student management system built with Spring Boot, featuring student records, grade management, and user authentication.",
     technologies: [
-      "React.js",
-      "Node.js",
-      "Gemini API",
-      "OpenAI API",
-      "MongoDB",
+      "Bootstrap",
+      "JavaScript",
+      "Spring Boot",
+      "PostgreSQL",
+      "Supabase",
     ],
-    stack: ["MERN", "AI"],
+    stack: ["Spring Boot"],
     status: "Complete",
-    liveUrl: "#",
-    githubUrl: "#",
+    // liveUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: "8",
-    title: "Task Management App",
+    title: "Instagram Analytics Dashboard",
     description:
-      "Kanban-style project management tool with drag-and-drop, real-time collaboration, sprint planning, and Slack integration.",
-    technologies: ["React.js", "Express.js", "MongoDB", "Supabase"],
-    stack: ["MERN"],
+      "An analytics dashboard for Instagram built with React and Tailwind CSS, integrating the Instagram Graph API to display insights on followers, engagement, and content performance.",
+    technologies: ["Figma AI"],
+    stack: ["Figma Make"],
     status: "Complete",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://mode-speak-92040017.figma.site",
+    // githubUrl: "#",
+  },
+  {
+    id: "9",
+    title: "ORIPA SYSTEM",
+    description:
+      "An ORIPA system built with React and Tailwind CSS, integrating the ORIPA API to provide real-time data visualization and insights for users.",
+    technologies: ["Figma AI"],
+    stack: ["Figma Make"],
+    status: "Complete",
+    liveUrl: "https://saint-frown-70222356.figma.site",
+    // githubUrl: "#",
   },
 ];
 
@@ -147,10 +176,10 @@ export interface Skill {
 
 export const skills: Skill[] = [
   // UI
+  { name: "Bootstrap", category: "UI" },
+  { name: "Tailwind CSS", category: "UI" },
   { name: "Figma", category: "UI" },
   // Frontend
-  { name: "Bootstrap", category: "Frontend" },
-  { name: "Tailwind CSS", category: "Frontend" },
   { name: "JavaScript", category: "Frontend" },
   { name: "TypeScript", category: "Frontend" },
   { name: "React.js", category: "Frontend" },
@@ -175,25 +204,39 @@ export const skills: Skill[] = [
 // ─── Tech Stack (for dedicated section) ──────────────────
 export interface TechItem {
   name: string;
-  category: "Frontend" | "Backend" | "Database" | "AI" | "Dev Tools" | "Mobile";
+  category:
+    | "UI"
+    | "Frontend"
+    | "Backend"
+    | "Database"
+    | "AI"
+    | "Dev Tools"
+    | "Mobile";
   color: string;
   icon: IconType;
 }
 
 export const techStack: TechItem[] = [
-  // Frontend
+  // UI
   {
     name: "Bootstrap",
-    category: "Frontend",
+    category: "UI",
     color: "#7952B3",
     icon: FaBootstrap,
   },
   {
     name: "Tailwind CSS",
-    category: "Frontend",
+    category: "UI",
     color: "#06B6D4",
     icon: SiTailwindcss,
   },
+  {
+    name: "Figma AI",
+    category: "UI",
+    color: "#F24E1E",
+    icon: FaFigma,
+  },
+  // Frontend
   {
     name: "JavaScript",
     category: "Frontend",
@@ -213,6 +256,12 @@ export const techStack: TechItem[] = [
     color: "#E2E8F0",
     icon: SiNextdotjs,
   },
+  {
+    name: "Vue.js",
+    category: "Frontend",
+    color: "#42B883",
+    icon: SiVuedotjs,
+  },
   // Backend
   { name: "Node.js", category: "Backend", color: "#68A063", icon: FaNodeJs },
   {
@@ -227,6 +276,18 @@ export const techStack: TechItem[] = [
     color: "#6DB33F",
     icon: SiSpringboot,
   },
+  {
+    name: "Python",
+    category: "Backend",
+    color: "#3776AB",
+    icon: SiPython,
+  },
+  {
+    name: "Django",
+    category: "Backend",
+    color: "#092E20",
+    icon: SiDjango,
+  },
   // Database
   { name: "MongoDB", category: "Database", color: "#47A248", icon: SiMongodb },
   { name: "DynamoDB", category: "Database", color: "#4B73D8", icon: FaAws },
@@ -235,6 +296,12 @@ export const techStack: TechItem[] = [
     category: "Database",
     color: "#3FCF8E",
     icon: SiSupabase,
+  },
+  {
+    name: "Firebase",
+    category: "Database",
+    color: "#FF6F00",
+    icon: SiFirebase,
   },
   { name: "SQL", category: "Database", color: "#336791", icon: FaDatabase },
   // AI
@@ -259,14 +326,14 @@ export const techStack: TechItem[] = [
 export const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
   { label: "Tech Stack", href: "#techstack" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
 // ─── Social Links ────────────────────────────────────────
 export const socialLinks = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/in/",
-  email: "thetpaingoo@example.com",
+  github: "https://github.com/minnthetpaingoo",
+  linkedin: "https://linkedin.com/in/thet-paing-oo-753926376",
+  email: "minnthetpaingoo@gmail.com",
 };
